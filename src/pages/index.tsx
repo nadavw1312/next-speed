@@ -13,7 +13,7 @@ export default function Home() {
     // Simulate a delay (you can replace this with actual logic)
     setTimeout(() => {
       setParticlesVisible(true);
-    }, 1000); // Delay in milliseconds
+    }, 2000); // Delay in milliseconds
   }, []); // The empty dependency array ensures this effect runs once after initial render
 
   return (
