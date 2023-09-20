@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
     "@types/node": "20.6.3",
@@ -16,10 +19,18 @@
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.1",
     "next": "13.5.1",
+    "next-themes": "^0.2.1",
     "postcss": "8.4.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-particles": "^2.12.2",
     "tailwindcss": "3.3.3",
+    "tsparticles": "^2.12.0",
+    "tsparticles-engine": "^2.12.0",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^13.5.1",
+    "cross-env": "^7.0.3"
   }
 }
