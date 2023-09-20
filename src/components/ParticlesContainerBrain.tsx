@@ -9,9 +9,7 @@ interface ParticlesContainerBrainProps {
   id: string;
 }
 
-export default function ParticlesContainerBrain(
-  props: ParticlesContainerBrainProps
-) {
+export default function ParticlesContainerBrain(props: ParticlesContainerBrainProps) {
   const { theme } = useTheme();
 
   const isDarkMode = theme === "dark";
@@ -23,7 +21,7 @@ export default function ParticlesContainerBrain(
 
   const options: RecursivePartial<IOptions> = {
     detectRetina: false,
-    fpsLimit: 60,
+    fpsLimit: 30,
     fullScreen: false,
     interactivity: {
       detectsOn: "canvas",
@@ -78,7 +76,7 @@ export default function ParticlesContainerBrain(
           area: 2000,
         },
         limit: 0,
-        value: 400,
+        value: 300,
       },
       opacity: {
         animation: {
